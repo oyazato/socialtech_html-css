@@ -12,6 +12,11 @@
     <meta property="og:title" content="socialtech" />
     <meta property="og:description" content="socialtechについて" />
     <meta property="og:image" content="https://oyazato.github.io/socialtech_html-css/images/index/index-mission.png" />
+
+    <!-- slickの読み込み -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+				
 </head>
 <body>
     <!-- ヘッダー -->
@@ -55,13 +60,18 @@
     </header>
     <main>
         <article>
-            <!-- メインビジュアル -->
-            <section id="main-visual">
-                <div id="main-message">
-                    <h1>WORLD PEACE</h1>
-                    <p>IT教育で世界平和を実現する</p>
+            <!-- カルーセル -->
+            <section id="carousel-section">
+                <div class="carousel1">
+                    <div><img class="carouselImg" src="images/carousel1.png">
+                    </div>
+                    <div>
+                        <img class="carouselImg" src="images/carousel2.png">
+                    </div>
+                    <div>
+                        <img class="carouselImg" src="images/carousel3.png">
+                    </div>
                 </div>
-                <img src="images/index/index-main.png" alt="PCの周りに集まる多国籍の仲間たち">
             </section>
             <!-- ミッション -->
             <section id="mission">
@@ -79,7 +89,7 @@
                         <h3>S2DGsの実現</h3>
                         <P>国連が掲げる「Sustainable Development Goals（持続可能な開発目標）」に含まれる17つのグローバル目標のうち、以下の5つの目標の実現をミッションとしてサービスを展開しています。</P>
                         <a href="mission.html">
-                            <img src="images/button-more.png" alt="もっとみる">
+                            <img class="button-more" src="images/button-more.png" alt="もっとみる">
                         </a>
                     </div>
                 </div>
@@ -127,7 +137,7 @@
                 </div>
                 <div>
                     <a id="product-more" href="product.html">
-                        <img src="images/button-more.png" alt="もっとみる">
+                        <img class="button-more" src="images/button-more.png" alt="もっとみる">
                     </a>
                 </div>
             </section>
@@ -414,6 +424,13 @@
                 <span id="copyright">&copy;2021 SocialTech, Inc All Rights Reserved.</span>
             </div>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4" crossorigin="anonymous"></script>
+
+        <!-- slickの読み込み -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script src="script.js"></script>
     </main>
 </body>
 
